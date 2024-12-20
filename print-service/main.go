@@ -7,7 +7,7 @@ import (
 
 func pingHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("!!!!!!!!! Pimggggg")
-	response := "Print Service is up !! After the CI/CD"
+	response := "This is my first Service and it works !!"
 	w.Write([]byte(response)) // Convert string to []byte and write to ResponseWriter
 }
 
