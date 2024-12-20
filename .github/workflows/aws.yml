@@ -52,6 +52,12 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
+    
+    - name: Run tests
+      id: run-tests
+      run: |
+        cd print-service
+        go test ./...
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1

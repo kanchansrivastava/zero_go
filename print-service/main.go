@@ -1,13 +1,11 @@
 package main
 
 import (
-	"fmt"
 	"net/http"
 )
 
 func pingHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("!!!!!!!!! Pimggggg")
-	response := "This is my first Service and it works !!"
+	response := "This is my first Service and it works. Current version is 1 !!"
 	w.Write([]byte(response)) // Convert string to []byte and write to ResponseWriter
 }
 
